@@ -16,7 +16,8 @@
 /* Navbar styles */
 .navbar {
   display: flex;
-  flex-direction: space-between; /* mobile-first */
+  flex-direction: row; /* mobile-first */
+  justify-content: space-between;
   align-items: center;
   background: #333;
   color: white;
@@ -50,6 +51,7 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
+
 
 position: fixed;
 top: 0;
