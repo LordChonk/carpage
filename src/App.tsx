@@ -21,7 +21,7 @@ function App(){
       onClick={() => setMenuOpen(!menuOpen)}
       aria-label="Toggle navigation"
       >
-        {"\u2630"} {/*hamburger button unicode */}
+        {menuOpen ? "\u00D7" : "\u2630"} {/*hamburger button unicode */}
       </button>
 
 
