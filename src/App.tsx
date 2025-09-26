@@ -3,7 +3,7 @@ import {Routes, Route, NavLink} from "react-router-dom";
 import Startsida from "./pages/Startsida";
 import OmOss from "./pages/OmOss";
 import Kontakt from "./pages/Kontakt";
-import SälgDinBil from "./pages/SälgDinBil";
+import SälgDinBil from "./pages/SaljDinBil";
 import Lager from "./pages/Lager";
 
 function App(){
