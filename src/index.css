@@ -105,3 +105,44 @@ z-index: 2000;
     display: none;
   }
 }
+
+
+/* Footer */
+
+footer{
+  background-color: #333;
+  padding-bottom: 25px;
+  color: #61dafb;
+}
+
+footer p, address{
+  padding-left: 30px;
+  color: #4594aa;
+}
+.footer-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  /* see if you want to keep this translation (just nudges the stuff to the left), also make sure to fix the social icons for this part too*/
+  transform: translateX(-5%);
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+
+.footer-col {
+  /*flex: 1;*/
+  min-width: 200px;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  transform: translateX(-5%);
+}
+
+
+
+
+

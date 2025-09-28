@@ -76,9 +76,31 @@ function App(){
         </Routes>
     </main>
 
+  
+
     {/* Footer */}
     <footer className="footer">
-      <p>© {new Date().getFullYear()} name placeholder. All rights reserved</p>
+
+     <div className="footer-row" >
+     <div className="footer-col"> 
+        <h1>KONTAKTUPPGIFTER</h1>
+        <address>
+          *gata* *nummer* <br /> 
+          *postkod* *ort* 
+        </address>
+      </div>
+
+      <div className="footer-col">
+        <h1>ÖPPETTIDER</h1>
+        <p>Mån-Sön: Endast tidsbokning</p>
+   </div> 
+  </div>
+
+<div className="social-icons">
+<p>/*put social media icons lowest, centered in a row, so basically here */</p>
+</div>
+
+      <p>© {new Date().getFullYear()} VK Perfomance. Hemsidan skapad av Adrian Hjert</p>
     </footer>
   </div>
   );
