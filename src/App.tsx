@@ -15,7 +15,10 @@ function App(){
   <div>
     {/* Navbar */}
     <header className="navbar">
-      <h1 className="logo">Carpage placeholder</h1>
+      {/*<h1 className="logo">Carpage placeholder</h1>*/}
+      <NavLink to="/" className="logo-button">
+      <img src="./public/logoSmall.jpeg"></img>
+      </NavLink>
 
     {/* Mobile Navbar */}
     <button
