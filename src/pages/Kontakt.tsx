@@ -28,18 +28,34 @@ export default function Kontakt() {
       <form onSubmit={handleSubmit}>
         <label>
           Namn:
-          <input type="text" name="name" required />
+          <input type="text" name="name" placeholder="Ditt namn" required />
+        </label>
+
+        <label>
+            Telefonnummer:
+            <input type="tel" name="phone" id="phone" placeholder="Ditt telefonnummer" required/>
         </label>
 
         <label>
           E-post:
-          <input type="email" name="email" required />
+          <input type="email" name="email" placeholder="Din e-post"required />
         </label>
 
-        <label>
+        <label htmlFor = "message">
           Meddelande:
-          <textarea name="message" required></textarea>
-        </label>
+          </label>
+          <textarea name="message" 
+          placeholder="Ditt meddelande" 
+          maxLength = {250}
+          required 
+          onInput={(e) => {
+            const target = e.target as HTMLTextAreaElement;
+            const counter = document.getElementById("count");
+            if (counter) counter.innerText = `${target.value.length}/500`;
+          }}>
+          </textarea>
+          <small id="count">0/250</small>
+
 
         <button type="submit">Skicka</button>
       </form>

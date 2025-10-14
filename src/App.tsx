@@ -5,6 +5,8 @@ import OmOss from "./pages/OmOss";
 import Kontakt from "./pages/Kontakt";
 import SälgDinBil from "./pages/SaljDinBil";
 import Lager from "./pages/Lager";
+import {FaInstagram} from "react-icons/fa"
+import {FaFacebook} from "react-icons/fa"
 
 function App(){
   const [menuOpen, setMenuOpen] =useState(false);
@@ -88,8 +90,8 @@ function App(){
      <div className="footer-col"> 
         <h1>KONTAKTUPPGIFTER</h1>
         <address>
-          *gata* *nummer* <br /> 
-          *postkod* *ort* 
+          Hyvelgatan 37 <br /> 
+          741 71 Knivsta 
         </address>
       </div>
 
@@ -100,7 +102,9 @@ function App(){
   </div>
 
 <div className="social-icons">
-<p>/*put social media icons lowest, centered in a row, so basically here */</p>
+{/*<p>/*put social media icons lowest, centered in a row, so basically here </p>*/}
+    <FaInstagram/> 
+    <FaFacebook/>
 </div>
 
       <p>© {new Date().getFullYear()} VK Perfomance. Hemsidan skapad av Adrian Hjert</p>

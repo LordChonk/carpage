@@ -116,7 +116,7 @@ z-index: 2000;
 
   .navbar nav {
     flex-direction: row;
-    justify-content: left;
+    justify-content: right;
     align-items: center;
     padding: 1rem 2rem;
   }
@@ -146,7 +146,7 @@ footer p, address{
   justify-content: center;
   align-items: flex-start;
   /* see if you want to keep this translation (just nudges the stuff to the left), also make sure to fix the social icons for this part too*/
-  transform: translateX(-5%);
+  /*transform: translateX(-5%);*/
   flex-wrap: wrap;
   gap: 4rem;
 }
@@ -159,8 +159,9 @@ footer p, address{
 .social-icons {
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: center;
-  transform: translateX(-5%);
+  gap: 1rem;
 }
 
 /* Contact form styling */
