@@ -6,7 +6,7 @@ export default function Kontakt() {
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const formData = new FormData(event.currentTarget);
-    formData.append("access_key", "your-access-key-here");
+    formData.append("access_key", "cd72d0f8-5b77-402d-9e25-e7a48a9c9203");
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
@@ -30,7 +30,7 @@ export default function Kontakt() {
           Namn:
           <input type="text" name="name" required />
         </label>
-      <br/>
+
         <label>
           E-post:
           <input type="email" name="email" required />

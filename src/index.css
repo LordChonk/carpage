@@ -3,6 +3,17 @@
   color: #c19437;
 }
 
+/* Reset default browser spacing */
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #333; /* Or whatever your main background color is */
+}
+
+/* Optional: make sure everything fits nicely */
+* {
+  box-sizing: border-box;
+}
 
 /* Hamburger button */
 .hamburger {
@@ -83,7 +94,7 @@ z-index: 2000;
 }
 
 .nav-link:hover {
-  background: rgba(97, 218, 251, 0.2);
+  background: #c193378b;
 }
 
 /* Active link style */
@@ -105,7 +116,7 @@ z-index: 2000;
 
   .navbar nav {
     flex-direction: row;
-    justify-content: right;
+    justify-content: left;
     align-items: center;
     padding: 1rem 2rem;
   }
@@ -174,6 +185,8 @@ footer p, address{
   padding: 1.5rem;
   border-radius: 6px;
   border: 1px solid #271f1f;
+  margin-top: 0.2rem;
+  margin-bottom: 1rem;
 }
 
 .kontakt-formular button {
@@ -190,22 +203,28 @@ footer p, address{
 }
 
 .kontakt-formular button:hover {
-  background-color: #4dc8e8;
+  background-color: #c19437;
 }
 
 /* Mobile optimization */
 @media (max-width: 600px) {
   .kontakt-formular {
+    display: flex;
+    flex-direction: column;
     width: 90%;
     padding: 1rem;
   }
 
   .kontakt-formular input,
   .kontakt-formular textarea {
-    width: 90%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     font-size: 0.95rem;
     padding: 0.75rem;
     padding-right: 1.5rem;
+    margin-top: 0.2rem;
+    margin-bottom: 1rem;
   }
 
   .kontakt-formular button {
