@@ -30,6 +30,7 @@ export default function SälgDinBil(){
             <div className="kontakt-formular">
       <h2>Sälg Din Bil</h2>
       <form onSubmit={handleSubmit}>
+        <div className="form-row">
         <label>
           Namn:
           <input type="text" name="name" placeholder="Ditt namn" required />
@@ -39,12 +40,14 @@ export default function SälgDinBil(){
             Telefonnummer:
             <input type="tel" name="phone" id="phone" placeholder="Ditt telefonnummer" required/>
         </label>
+        </div>
 
         <label>
           E-post:
           <input type="email" name="email" placeholder="Din e-post"required />
         </label>
 
+        <div className="form-row">
         <label>
             Registreringsnummer:
         <input
@@ -69,7 +72,8 @@ export default function SälgDinBil(){
             step={1}
             required/>
         </label>
-
+        </div>
+        
         <label htmlFor = "message">
           Övrig information:
           </label>

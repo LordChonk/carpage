@@ -25,7 +25,9 @@ export default function Kontakt() {
   return (
     <div className="kontakt-formular">
       <h2>Kontakta oss</h2>
+      <p>Har du några funderingar, frågor eller vill boka tid hos oss? Tveka inte att höra av dig via kontaktformuläret, så återkommer vi så snart vi kan!</p>
       <form onSubmit={handleSubmit}>
+        <div className="form-row">
         <label>
           Namn:
           <input type="text" name="name" placeholder="Ditt namn" required />
@@ -35,7 +37,7 @@ export default function Kontakt() {
             Telefonnummer:
             <input type="tel" name="phone" id="phone" placeholder="Ditt telefonnummer" required/>
         </label>
-
+        </div>
         <label>
           E-post:
           <input type="email" name="email" placeholder="Din e-post"required />

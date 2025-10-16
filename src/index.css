@@ -7,6 +7,7 @@
 html, body {
   margin: 0;
   padding: 0;
+  width: 100%;
   background-color: #333; /* Or whatever your main background color is */
 }
 
@@ -58,8 +59,8 @@ html, body {
   display: none;
   /*flex-direction: column;
   gap: 0.5rem;
-  width: 100%;
   align-items: center;*/
+  width: 100%;
 }
 
 .navbar nav.open {
@@ -164,6 +165,25 @@ footer p, address{
   gap: 1rem;
 }
 
+/* Mobile footer */
+@media (max-width: 600px) {
+  .footer{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-row{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer address{
+    transform: translateX(30%);
+  }
+  }
+  
+
+
 /* Contact form styling */
 .kontakt-formular {
   max-width: 500px;
@@ -207,6 +227,13 @@ footer p, address{
   background-color: #c19437;
 }
 
+.form-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
 /* Mobile optimization */
 @media (max-width: 600px) {
   .kontakt-formular {
@@ -231,6 +258,10 @@ footer p, address{
   .kontakt-formular button {
     width: 90%; 
     margin: 0 auto;
+  }
+
+  .form-row{
+    flex-direction: column;
   }
 }
 
