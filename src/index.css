@@ -186,23 +186,57 @@ footer p, address{
 
 
 /* Contact form styling */
+
+.form-sida {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-sida h2 {
+  font-size: 40px;
+}
+
+.form-cols {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding-left: 20px;
+}
+
+@media (min-width: 768px){ /* just to fix text on desktop*/
+.form-cols p {
+  max-width: 50%;
+  font-size: larger;
+  transform: translateY(-100%);
+  padding-left: 1rem;
+}
+}
+
+.kontakt-formular h2{ 
+  transform: translateX(18%);
+}
+
 .kontakt-formular {
+  width: 100%;
   max-width: 500px;
   margin: 2rem auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; 
+  align-items: stretch; 
+  box-sizing: border-box;
   gap: 1rem;
   background-color: transparent;
   color: #c19437;
   padding: 2rem;
   border-radius: 8px;
+  flex: 1;
 }
 
 .kontakt-formular input,
 .kontakt-formular textarea {
-  max-width: 500px;
   width: 100%;
   padding: 1.5rem;
   border-radius: 6px;
@@ -210,6 +244,33 @@ footer p, address{
   margin-top: 0.2rem;
   margin-bottom: 1rem;
 }
+
+
+
+.form-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+
+/*.kontakt-sida{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.kontakt-text {
+  text-align: left;
+  padding-right: 2rem;
+  max-width: 500px;
+}
+
+*/
 
 .kontakt-formular button {
   display: block;
@@ -228,20 +289,40 @@ footer p, address{
   background-color: #c19437;
 }
 
-.form-row {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 0.75rem;
-}
 
 /* Mobile optimization */
-@media (max-width: 600px) {
+@media (max-width: 785px) {
+  .form-sida{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-sida h2{
+    max-width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    text-align: center;
+  }
+  .form-cols {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-cols p {
+    max-width: 100%;
+    padding-right: 1rem;
+    text-align: justify;
+  }
+
+  .kontakt-formular h2{
+    transform: none;
+  }
   .kontakt-formular {
     display: flex;
     flex-direction: column;
     width: 90%;
     padding: 1rem;
+    padding-right: 2rem;
   }
 
   .kontakt-formular input,

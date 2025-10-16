@@ -23,9 +23,13 @@ export default function Kontakt() {
   };
 
   return (
-    <div className="Kontakt-sida">
-      <h2>Kontakta oss</h2>
+    <div className="form-sida">
+
+<h2>Kontakta oss</h2>
+    <div className="form-cols">
+      
       <p>Har du några funderingar, frågor eller vill boka tid hos oss? Tveka inte att höra av dig via kontaktformuläret, så återkommer vi så snart vi kan!</p>
+
       <div className="kontakt-formular">
       <form onSubmit={handleSubmit}>
         <div className="form-row">
@@ -66,5 +70,6 @@ export default function Kontakt() {
       {result && <p>{result}</p>}
     </div>
     </div>
+          </div>
   );
 }
