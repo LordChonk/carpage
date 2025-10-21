@@ -61,7 +61,7 @@ export default function SälgDinBil(){
             placeholder="ABC123" 
             maxLength = {10} 
             pattern="[A-Za-z0-9\- ]{2,10}" 
-            text-transform: uppercase
+            style={{textTransform: "uppercase"}}
             required 
         />
         </label>
