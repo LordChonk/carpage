@@ -10,7 +10,7 @@ html, body {
   width: 100%;
   background-color: #333; /* Or whatever your main background color is */
   overflow-x: hidden;
-  
+  font-family: 'Exo 2', sans-serif;
 }
 
 /* Optional: make sure everything fits nicely */
@@ -229,7 +229,7 @@ footer p, address{
   align-items: stretch; 
   box-sizing: border-box;
   gap: 1rem;
-  background-color: transparent;
+  background-color: rgb(70, 70, 70);
   color: #c19437;
   padding: 2rem;
   border-radius: 8px;
@@ -244,6 +244,13 @@ footer p, address{
   border: 1px solid #271f1f;
   margin-top: 0.2rem;
   margin-bottom: 1rem;
+  background: rgb(70, 70, 70);
+  color: #c19437;
+}
+
+.kontakt-formular input::placeholder,
+.kontakt-formular textarea::placeholder {
+  color: #c19437
 }
 
 
@@ -307,10 +314,13 @@ footer p, address{
   .form-cols {
     display: flex;
     flex-direction: column;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .form-cols p {
     max-width: 100%;
+    padding-left: 1rem;
     padding-right: 1rem;
     text-align: justify;
   }
