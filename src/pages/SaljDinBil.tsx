@@ -23,7 +23,7 @@ export default function SälgDinBil(){
       };
 
     return (
-      <div className="salg-sida">
+      <div className="salj-sida">
         <div className="form-sida">
 
             <h2>Vi köper din bil - snabbt, enkelt och tryggt!</h2>
