@@ -98,7 +98,7 @@ function App(){
       <div className="footer-col">
         <h1>ÖPPETTIDER</h1>
         <p>Mån-Sön: Endast tidsbokning</p>
-   </div> 
+    </div>
   </div>
 
 <div className="social-icons">
@@ -107,7 +107,7 @@ function App(){
     <FaFacebook/>
 </div>
 
-      <p>© {new Date().getFullYear()} VK Perfomance. Hemsidan skapad av Adrian Hjert</p>
+      <h3>© {new Date().getFullYear()} VK Perfomance. Hemsidan skapad av Adrian Hjert</h3>
     </footer>
   </div>
   );

@@ -1,6 +1,6 @@
 #root{
   background-color: black;
-  color: #c19437;
+  color: #dda638;
 }
 
 /* Reset default browser spacing */
@@ -24,7 +24,7 @@ html, body {
   background: none;
   border: none;
   font-size: 1.5rem;
-  color: #c19437;
+  color: #dda638;
   cursor: pointer;
   margin-bottom: 0.5rem;
 
@@ -88,7 +88,7 @@ z-index: 2000;
 }
 
 .nav-link {
-  color: #c19437;
+  color: #dda638;
   text-decoration: none;
   font-weight: 500;
   padding: 0.25rem 0.5rem;
@@ -102,7 +102,7 @@ z-index: 2000;
 
 /* Active link style */
 .nav-link.active {
-  background: #c19437;
+  background: #dda638;
   color: #333;
 }
 
@@ -136,13 +136,16 @@ z-index: 2000;
 footer{
   background-color: #333;
   padding-bottom: 25px;
-  color: #c19437;
+  color: #dda638;
 }
 
-footer p, address{
-  padding-left: 30px;
-  color: #c19437;
+footer h3{
+  justify-self: center;
+  font-weight: 400;
+  font-size: medium;
 }
+
+
 .footer-row {
   display: flex;
   flex-direction: row;
@@ -177,6 +180,7 @@ footer p, address{
   .footer-row{
     flex-direction: column;
     align-items: center;
+    margin: 0;
   }
 
   .footer address{
@@ -206,6 +210,8 @@ footer p, address{
   padding-left: 20px;
 }
 
+
+
 @media (min-width: 768px){ /* just to fix text on desktop*/
 .form-cols p {
   max-width: 50%;
@@ -230,7 +236,7 @@ footer p, address{
   box-sizing: border-box;
   gap: 1rem;
   background-color: rgb(70, 70, 70);
-  color: #c19437;
+  color: #dda638;
   padding: 2rem;
   border-radius: 8px;
   flex: 1;
@@ -245,12 +251,12 @@ footer p, address{
   margin-top: 0.2rem;
   margin-bottom: 1rem;
   background: rgb(70, 70, 70);
-  color: #c19437;
+  color: #dda638;
 }
 
 .kontakt-formular input::placeholder,
 .kontakt-formular textarea::placeholder {
-  color: #c19437
+  color: #dda638
 }
 
 
@@ -284,7 +290,7 @@ footer p, address{
   display: block;
   margin: 0 auto;
   margin-top: 1rem;
-  background-color: #c19437;
+  background-color: #dda638;
   color: #333;
   border: none;
   padding: 0.75rem 1.5rem;
@@ -294,7 +300,7 @@ footer p, address{
 }
 
 .kontakt-formular button:hover {
-  background-color: #c19437;
+  background-color: #dda638;
 }
 
 
@@ -385,7 +391,7 @@ footer p, address{
 }
 
 .lager-text h2{
-  color: #c19437;
+  color: #dda638;
   margin-bottom: 1rem;
 }
 
@@ -396,7 +402,7 @@ footer p, address{
 
 .lager-button {
   display: inline-block;
-  background-color: #c19437;
+  background-color: #dda638;
   color: black;
   padding: 0.75rem 1.25rem;
   border-radius: 6px;
@@ -476,6 +482,42 @@ footer p, address{
     height: 400px;
   }
 }*/
+
+/* Bilder */
+
+.salg-sida{
+  background-image: url(/public/bg_images/nycklar.jpg);
+  background-size: cover;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  position: relative;
+}
+
+.salg-sida::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+
+.salg-sida > * {
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 768px){
+  .salg-sida{
+    background-position: center;
+  }
+}
+
+
+
+
+
 
 
 
