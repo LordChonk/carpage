@@ -2,6 +2,7 @@ import React from "react";
 
 export default function Lager(){
     return (
+        <div className="lager-sida">
         <section className="lager-section">
             <div className="lager-container">
                 <div className="lager-text">
@@ -26,9 +27,11 @@ export default function Lager(){
                 </div>
             </div>
         </section>
-      
+      </div>
     );
 } 
+
+{/* Om detta ej funkar, kan jag försöka göra manuella länkar till annonserna, men då blir det ingen iframe och allt måste uppdateras manuellt */}
 
 {/*} <div className="lager-sida">
             <h2>Bilar i lager</h2>

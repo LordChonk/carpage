@@ -221,6 +221,19 @@ footer h3{
 }
 }
 
+/* Kontakt sida */
+.kontakt-sida h2{
+  /*color: #c79a3f;*/
+  color: black;
+}
+
+.kontakt-sida{
+  font-weight: 500;
+  font-size: 20px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+}
+
+
 .kontakt-formular h2{ 
   transform: translateX(18%);
 }
@@ -260,31 +273,12 @@ footer h3{
 }
 
 
-
 .form-row {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   gap: 0.75rem;
 }
-
-
-/*.kontakt-sida{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-  padding: 2rem 0;
-}
-
-.kontakt-text {
-  text-align: left;
-  padding-right: 2rem;
-  max-width: 500px;
-}
-
-*/
 
 .kontakt-formular button {
   display: block;
@@ -368,13 +362,29 @@ footer h3{
 /* Lagersida */
 
 .lager-section {
-  background-color: black;
-  color: #f0f0f0;
+  background-image: url(/public/bg_images/lager.jpg);
+  background-size: cover;
+  /*color: #f0f0f0;*/
   padding: 3rem 1rem;
   display: flex;
   justify-content: center;
+  font-size: large;
+  font-weight: bolder;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+  position: relative;
 }
 
+.lager-section h2{
+  font-size: 40px;
+}
+
+.lager-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 0;
+}
 .lager-container {
   display: flex;
   flex-direction: row;
@@ -420,7 +430,7 @@ footer h3{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: black;
+ /* background-color: black;*/
   border-radius: 8px;
   padding: 1rem;
   max-width: 500px;
@@ -432,7 +442,7 @@ footer h3{
   height: 225px;
   border: none;
   border-radius: 6px;
-  background-color: black;
+ /* background-color: black;*/
   overflow: hidden;
   box-shadow: 0 0 20px black;
 }
@@ -458,6 +468,14 @@ footer h3{
   .lager-button {
     margin-top: 1rem;
   }
+
+  .lager-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 0;
+}
 }
 
 
@@ -484,9 +502,8 @@ footer h3{
 }*/
 
 /* Bilder */
-
-.salg-sida{
-  background-image: url(/public/bg_images/nycklar.jpg);
+/*.lager-sida{
+  background-image: url(/public/bg_images/lager.jpg);
   background-size: cover;
   overflow: hidden;
   background-repeat: no-repeat;
@@ -495,7 +512,24 @@ footer h3{
   position: relative;
 }
 
-.salg-sida::before {
+
+
+.lager-sida > * {
+  position: relative;
+  z-index: 1;
+}*/
+.salj-sida{
+  background-image: url(/public/bg_images/nycklar.jpg);
+  background-size: cover;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  position: relative;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+}
+
+.salj-sida::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -503,14 +537,42 @@ footer h3{
   z-index: 0;
 }
 
-.salg-sida > * {
+.salj-sida > * {
   position: relative;
   z-index: 1;
 }
 
 @media (max-width: 768px){
-  .salg-sida{
+  .salj-sida{
     background-position: center;
+  }
+}
+
+.kontakt-sida{
+  background-image: url(/public/bg_images/kontakt.jpg);
+   background-size: cover;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  position: relative;
+}
+.kontakt-sida::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 0;
+}
+
+.kontakt-sida > * {
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 768px){
+  .kontakt-sida p{
+    text-align: start;
   }
 }
 

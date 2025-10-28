@@ -23,6 +23,7 @@ export default function Kontakt() {
   };
 
   return (
+    <div className="kontakt-sida">
     <div className="form-sida">
 
 <h2>Kontakta oss</h2>
@@ -70,6 +71,7 @@ export default function Kontakt() {
       {result && <p>{result}</p>}
     </div>
     </div>
+          </div>
           </div>
   );
 }
