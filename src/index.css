@@ -223,8 +223,8 @@ footer h3{
 
 /* Kontakt sida */
 .kontakt-sida h2{
-  /*color: #c79a3f;*/
-  color: black;
+  color: #c79a3f;
+  /*color: black;*/
 }
 
 .kontakt-sida{
@@ -370,7 +370,7 @@ footer h3{
   justify-content: center;
   font-size: large;
   font-weight: bolder;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
   position: relative;
 }
 
@@ -384,6 +384,7 @@ footer h3{
   inset: 0;
   background: rgba(0, 0, 0, 0.2);
   z-index: 0;
+  pointer-events: none;
 }
 .lager-container {
   display: flex;
@@ -549,8 +550,8 @@ footer h3{
 }
 
 .kontakt-sida{
-  background-image: url(/public/bg_images/kontakt.jpg);
-   background-size: cover;
+  background-image: url(/public/bg_images/tools.jpg);
+  background-size: cover;
   overflow: hidden;
   background-repeat: no-repeat;
   background-position: center;
@@ -575,6 +576,87 @@ footer h3{
     text-align: start;
   }
 }
+
+.om-oss {
+  background-image: url(/public/bg_images/bilar.jpg);
+  background-size: cover;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 50vh;
+  position: relative;
+  font-size: large;
+  font-weight: bolder;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+}
+
+.om-oss::before{
+   content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 0;
+}
+
+.om-oss > * {
+  position: relative;
+  z-index: 1;
+}
+
+.om-oss h2{
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+}
+
+.om-oss p{
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.start{
+  background-image: url(/public/bg_images/maro.jpg);
+   background-size: cover;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 50vh;
+  position: relative;
+  font-size: large;
+  font-weight: bolder;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+}
+
+.start::before{
+    content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 0;
+}
+
+.start > * {
+  position: relative;
+  z-index: 1;
+}
+
+.start h2{
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+}
+
+.start p{
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+
+
 
 
 
