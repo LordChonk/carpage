@@ -1,14 +1,16 @@
-#root{
+#root {
   background-color: black;
   color: #dda638;
 }
 
 /* Reset default browser spacing */
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   width: 100%;
-  background-color: #333; /* Or whatever your main background color is */
+  background-color: #333;
+  /* Or whatever your main background color is */
   overflow-x: hidden;
   font-family: 'Exo 2', sans-serif;
 }
@@ -20,7 +22,8 @@ html, body {
 
 /* Hamburger button */
 .hamburger {
-  display: block; /* mobile */
+  display: block;
+  /* mobile */
   background: none;
   border: none;
   font-size: 1.5rem;
@@ -35,7 +38,8 @@ html, body {
 /* Navbar styles */
 .navbar {
   display: flex;
-  flex-direction: row; /* mobile-first */
+  flex-direction: row;
+  /* mobile-first */
   justify-content: space-between;
   align-items: center;
   background: #333;
@@ -66,23 +70,23 @@ html, body {
 }
 
 .navbar nav.open {
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
 
-position: fixed;
-top: 0;
-left: 0;
-width: 100%;
-height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
 
-background: rgba(0, 0, 0, 1);
-z-index: 2000;
+  background: rgba(0, 0, 0, 1);
+  z-index: 2000;
 }
 
-.navbar .logo-button{
+.navbar .logo-button {
   background-color: transparent;
   border: 1px solid transparent;
 }
@@ -111,6 +115,7 @@ z-index: 2000;
   .navbar {
     justify-content: space-between;
   }
+
   nav {
     display: flex !important;
     flex-direction: row;
@@ -133,13 +138,13 @@ z-index: 2000;
 
 /* Footer */
 
-footer{
+footer {
   background-color: #333;
   padding-bottom: 25px;
   color: #dda638;
 }
 
-footer h3{
+footer h3 {
   justify-self: center;
   font-weight: 400;
   font-size: medium;
@@ -172,22 +177,22 @@ footer h3{
 
 /* Mobile footer */
 @media (max-width: 768px) {
-  .footer{
+  .footer {
     display: flex;
     flex-direction: column;
   }
 
-  .footer-row{
+  .footer-row {
     flex-direction: column;
     align-items: center;
     margin: 0;
   }
 
-  .footer address{
+  .footer address {
     transform: translateX(30%);
   }
-  }
-  
+}
+
 
 
 /* Contact form styling */
@@ -212,29 +217,31 @@ footer h3{
 
 
 
-@media (min-width: 768px){ /* just to fix text on desktop*/
-.form-cols p {
-  max-width: 50%;
-  font-size: larger;
-  transform: translateY(-100%);
-  padding-left: 1rem;
-}
+@media (min-width: 768px) {
+
+  /* just to fix text on desktop*/
+  .form-cols p {
+    max-width: 50%;
+    font-size: larger;
+    transform: translateY(-100%);
+    padding-left: 1rem;
+  }
 }
 
 /* Kontakt sida */
-.kontakt-sida h2{
+.kontakt-sida h2 {
   color: #c79a3f;
   /*color: black;*/
 }
 
-.kontakt-sida{
+.kontakt-sida {
   font-weight: 500;
   font-size: 20px;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
 }
 
 
-.kontakt-formular h2{ 
+.kontakt-formular h2 {
   transform: translateX(18%);
 }
 
@@ -245,7 +252,7 @@ footer h3{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: stretch; 
+  align-items: stretch;
   box-sizing: border-box;
   gap: 1rem;
   background-color: rgb(70, 70, 70);
@@ -300,17 +307,18 @@ footer h3{
 
 /* Mobile optimization */
 @media (max-width: 785px) {
-  .form-sida{
+  .form-sida {
     display: flex;
     flex-direction: column;
   }
-  
-  .form-sida h2{
+
+  .form-sida h2 {
     max-width: 100%;
     padding-right: 1rem;
     padding-left: 1rem;
     text-align: center;
   }
+
   .form-cols {
     display: flex;
     flex-direction: column;
@@ -325,9 +333,10 @@ footer h3{
     text-align: justify;
   }
 
-  .kontakt-formular h2{
+  .kontakt-formular h2 {
     transform: none;
   }
+
   .kontakt-formular {
     display: flex;
     flex-direction: column;
@@ -349,11 +358,11 @@ footer h3{
   }
 
   .kontakt-formular button {
-    width: 90%; 
+    width: 90%;
     margin: 0 auto;
   }
 
-  .form-row{
+  .form-row {
     flex-direction: column;
   }
 
@@ -370,11 +379,11 @@ footer h3{
   justify-content: center;
   font-size: large;
   font-weight: bolder;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
   position: relative;
 }
 
-.lager-section h2{
+.lager-section h2 {
   font-size: 40px;
 }
 
@@ -386,6 +395,7 @@ footer h3{
   z-index: 0;
   pointer-events: none;
 }
+
 .lager-container {
   display: flex;
   flex-direction: row;
@@ -401,7 +411,7 @@ footer h3{
   min-width: 280px;
 }
 
-.lager-text h2{
+.lager-text h2 {
   color: #dda638;
   margin-bottom: 1rem;
 }
@@ -422,16 +432,16 @@ footer h3{
   transition: background-color 0.3s ease;
 }
 
-.lager-button:hover{
+.lager-button:hover {
   background-color: #e3b85d;
 }
 
-.iframe-wrapper{
+.iframe-wrapper {
   flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
- /* background-color: black;*/
+  /* background-color: black;*/
   border-radius: 8px;
   padding: 1rem;
   max-width: 500px;
@@ -443,7 +453,7 @@ footer h3{
   height: 225px;
   border: none;
   border-radius: 6px;
- /* background-color: black;*/
+  /* background-color: black;*/
   overflow: hidden;
   box-shadow: 0 0 20px black;
 }
@@ -462,7 +472,7 @@ footer h3{
     margin-top: 2rem;
   }
 
-  .IframeBox{
+  .IframeBox {
     height: 300px;
   }
 
@@ -471,12 +481,12 @@ footer h3{
   }
 
   .lager-container::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.2);
-  z-index: 0;
-}
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 0;
+  }
 }
 
 
@@ -519,7 +529,7 @@ footer h3{
   position: relative;
   z-index: 1;
 }*/
-.salj-sida{
+.salj-sida {
   background-image: url(/public/bg_images/nycklar.jpg);
   background-size: cover;
   overflow: hidden;
@@ -527,7 +537,7 @@ footer h3{
   background-position: center;
   min-height: 100vh;
   position: relative;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
 }
 
 .salj-sida::before {
@@ -538,18 +548,18 @@ footer h3{
   z-index: 0;
 }
 
-.salj-sida > * {
+.salj-sida>* {
   position: relative;
   z-index: 1;
 }
 
-@media (max-width: 768px){
-  .salj-sida{
+@media (max-width: 768px) {
+  .salj-sida {
     background-position: center;
   }
 }
 
-.kontakt-sida{
+.kontakt-sida {
   background-image: url(/public/bg_images/tools.jpg);
   background-size: cover;
   overflow: hidden;
@@ -558,6 +568,7 @@ footer h3{
   min-height: 100vh;
   position: relative;
 }
+
 .kontakt-sida::before {
   content: "";
   position: absolute;
@@ -566,13 +577,13 @@ footer h3{
   z-index: 0;
 }
 
-.kontakt-sida > * {
+.kontakt-sida>* {
   position: relative;
   z-index: 1;
 }
 
-@media (max-width: 768px){
-  .kontakt-sida p{
+@media (max-width: 768px) {
+  .kontakt-sida p {
     text-align: start;
   }
 }
@@ -589,36 +600,36 @@ footer h3{
   font-weight: bolder;
   padding-left: 3rem;
   padding-right: 3rem;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
-.om-oss::before{
-   content: "";
+.om-oss::before {
+  content: "";
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.35);
   z-index: 0;
 }
 
-.om-oss > * {
+.om-oss>* {
   position: relative;
   z-index: 1;
 }
 
-.om-oss h2{
+.om-oss h2 {
   display: flex;
   justify-content: center;
   font-size: 40px;
 }
 
-.om-oss p{
+.om-oss p {
   font-size: 20px;
   font-weight: lighter;
 }
 
-.start{
+.start {
   background-image: url(/public/bg_images/maro.jpg);
-   background-size: cover;
+  background-size: cover;
   overflow: hidden;
   background-repeat: no-repeat;
   background-position: center;
@@ -628,42 +639,29 @@ footer h3{
   font-weight: bolder;
   padding-left: 3rem;
   padding-right: 3rem;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
-.start::before{
-    content: "";
+.start::before {
+  content: "";
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.35);
   z-index: 0;
 }
 
-.start > * {
+.start>* {
   position: relative;
   z-index: 1;
 }
 
-.start h2{
+.start h2 {
   display: flex;
   justify-content: center;
   font-size: 40px;
 }
 
-.start p{
+.start p {
   font-size: 20px;
   font-weight: lighter;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
