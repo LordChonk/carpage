@@ -1,6 +1,6 @@
 #root {
   background-color: black;
-  color: #dda638;
+  color: white;
 }
 
 /* Reset default browser spacing */
@@ -9,7 +9,7 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  background-color: #333;
+  background-color: black;
   /* Or whatever your main background color is */
   overflow-x: hidden;
   font-family: 'Exo 2', sans-serif;
@@ -27,7 +27,7 @@ body {
   background: none;
   border: none;
   font-size: 1.5rem;
-  color: #dda638;
+  color: white;
   cursor: pointer;
   margin-bottom: 0.5rem;
 
@@ -42,10 +42,9 @@ body {
   /* mobile-first */
   justify-content: space-between;
   align-items: center;
-  background: #333;
+  background: transparent;
   color: white;
   padding: 1rem;
-
   /* Sticky */
   position: sticky;
   top: 0;
@@ -92,7 +91,7 @@ body {
 }
 
 .nav-link {
-  color: #dda638;
+  color: white;
   text-decoration: none;
   font-weight: 500;
   padding: 0.25rem 0.5rem;
@@ -106,7 +105,7 @@ body {
 
 /* Active link style */
 .nav-link.active {
-  background: #dda638;
+  background: white;
   color: #333;
 }
 
@@ -139,9 +138,9 @@ body {
 /* Footer */
 
 footer {
-  background-color: #333;
+  background-color: black;
   padding-bottom: 25px;
-  color: #dda638;
+  color: white;
 }
 
 footer h3 {
@@ -230,7 +229,7 @@ footer h3 {
 
 /* Kontakt sida */
 .kontakt-sida h2 {
-  color: #c79a3f;
+  color: white;
   /*color: black;*/
 }
 
@@ -256,7 +255,7 @@ footer h3 {
   box-sizing: border-box;
   gap: 1rem;
   background-color: rgb(70, 70, 70);
-  color: #dda638;
+  color: white;
   padding: 2rem;
   border-radius: 8px;
   flex: 1;
@@ -272,12 +271,12 @@ footer h3 {
   margin-top: 0.2rem;
   margin-bottom: 1rem;
   background: rgb(70, 70, 70);
-  color: #dda638;
+  color: white8;
 }
 
 .kontakt-formular input::placeholder,
 .kontakt-formular textarea::placeholder {
-  color: #dda638
+  color: white
 }
 
 
@@ -292,7 +291,7 @@ footer h3 {
   display: block;
   margin: 0 auto;
   margin-top: 1rem;
-  background-color: #dda638;
+  background-color: white;
   color: #333;
   border: none;
   padding: 0.75rem 1.5rem;
@@ -302,7 +301,7 @@ footer h3 {
 }
 
 .kontakt-formular button:hover {
-  background-color: #dda638;
+  background-color: white;
 }
 
 
@@ -413,7 +412,7 @@ footer h3 {
 }
 
 .lager-text h2 {
-  color: #dda638;
+  color: white;
   margin-bottom: 1rem;
 }
 
@@ -424,7 +423,7 @@ footer h3 {
 
 .lager-button {
   display: inline-block;
-  background-color: #dda638;
+  background-color: white;
   color: black;
   padding: 0.75rem 1.25rem;
   border-radius: 6px;
@@ -628,8 +627,8 @@ footer h3 {
   font-weight: lighter;
 }
 
-.start {
-  background-image: url(/public/bg_images/maro.jpg);
+.start{
+  background-image: url(/public/bg_images/start.jpeg);
   background-size: cover;
   overflow: hidden;
   background-repeat: no-repeat;
@@ -665,4 +664,21 @@ footer h3 {
 .start p {
   font-size: 20px;
   font-weight: lighter;
+}
+
+.start h2, p{
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeUp 1.2s ease-out forwards;
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

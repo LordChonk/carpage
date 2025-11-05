@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import {useState} from "react";
 import {Routes, Route, NavLink} from "react-router-dom";
 import Startsida from "./pages/Startsida";
 import OmOss from "./pages/OmOss";
@@ -97,7 +97,7 @@ function App(){
 
       <div className="footer-col">
         <h1>ÖPPETTIDER</h1>
-        <p>Mån-Sön: Endast tidsbokning</p>
+        <h3>Mån-Sön: Endast tidsbokning</h3>
     </div>
   </div>
 
