@@ -1,4 +1,3 @@
-import React from "react";
 
 export default function Lager(){
     return (
@@ -17,16 +16,16 @@ export default function Lager(){
                     </a>
                 </div>
 
-                <div className="iframe-wrapper">
+               {/*} <div className="iframe-wrapper">
                     <iframe
             className="IframeBox"
             src="https://www.blocket.se/store_box.htm?ca=11&id=115861"
             title="Blocket annonser"
             loading="lazy"
           ></iframe>
-                </div>
+                </div>  */}
             </div>
-        </section>
+                    </section>
       </div>
     );
 } 

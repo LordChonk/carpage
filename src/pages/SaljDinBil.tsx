@@ -33,7 +33,7 @@ export default function SälgDinBil(){
             {/*put the form for vehicle details here */}
 
             <div className="kontakt-formular">
-      <h2>Sälg Din Bil</h2>
+      <h2>Sälj Din Bil</h2>
       <form onSubmit={handleSubmit}>
         <div className="form-row">
         <label>
