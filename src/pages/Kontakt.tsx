@@ -30,7 +30,7 @@ export default function Kontakt() {
     <div className="form-cols">
       
       <p>Har du några funderingar, frågor eller vill boka tid hos oss? Tveka inte att höra av dig via kontaktformuläret, så återkommer vi så snart vi kan!</p>
-
+    
       <div className="kontakt-formular">
       <form onSubmit={handleSubmit}>
         <div className="form-row">
@@ -44,10 +44,10 @@ export default function Kontakt() {
             <input type="tel" name="phone" id="phone" placeholder="Ditt telefonnummer" required/>
         </label>
         </div>
-        <label>
+       {/*} <label>
           E-post:
           <input type="email" name="email" placeholder="Din e-post"required />
-        </label>
+        </label>*/}
 
         <label htmlFor = "message">
           Meddelande:

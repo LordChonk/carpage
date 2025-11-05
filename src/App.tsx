@@ -7,6 +7,8 @@ import SälgDinBil from "./pages/SaljDinBil";
 import Lager from "./pages/Lager";
 import {FaInstagram} from "react-icons/fa"
 import {FaFacebook} from "react-icons/fa"
+import { FaWhatsapp } from "react-icons/fa";
+import { FaTiktok } from "react-icons/fa";
 
 function App(){
   const [menuOpen, setMenuOpen] =useState(false);
@@ -19,7 +21,7 @@ function App(){
     <header className="navbar">
       {/*<h1 className="logo">Carpage placeholder</h1>*/}
       <NavLink to="/" className="logo-button">
-      <img src="./public/logoSmall.jpeg"></img>
+      <img src="./public/logo.jpeg"></img>
       </NavLink>
 
     {/* Mobile Navbar */}
@@ -103,8 +105,20 @@ function App(){
 
 <div className="social-icons">
 {/*<p>/*put social media icons lowest, centered in a row, so basically here </p>*/}
+<a
+                    href=""
+                    target="_blank"
+                    rel="noopener noregerrer">
     <FaInstagram/> 
+    </a>
+    <a
+    href="https://www.tiktok.com/@vkperformancese?_r=1&_t=ZN-919Mq8Pd8yM"
+    target="_blank"
+    rel="noopener noregerrer">
+    <FaTiktok/>
+    </a>
     <FaFacebook/>
+    <FaWhatsapp/>
 </div>
 
       <h3>© {new Date().getFullYear()} VK Perfomance. Hemsidan skapad av Adrian Hjert</h3>

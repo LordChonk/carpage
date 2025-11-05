@@ -172,6 +172,10 @@ footer h3 {
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  a:link{ color: white;}
+  a:visited{
+    color: white;
+  }
 }
 
 /* Mobile footer */
@@ -205,6 +209,7 @@ footer h3 {
 
 .form-sida h2 {
   font-size: 40px;
+
 }
 
 .form-cols {
@@ -213,6 +218,7 @@ footer h3 {
   flex-direction: row;
   padding-left: 20px;
 }
+
 
 
 
@@ -254,7 +260,7 @@ footer h3 {
   align-items: stretch;
   box-sizing: border-box;
   gap: 1rem;
-  background-color: rgb(70, 70, 70);
+  background-color: rgba(70, 70, 70, 0.614);
   color: white;
   padding: 2rem;
   border-radius: 8px;
@@ -270,8 +276,8 @@ footer h3 {
   border: 1px solid #271f1f;
   margin-top: 0.2rem;
   margin-bottom: 1rem;
-  background: rgb(70, 70, 70);
-  color: white8;
+  background: rgb(70, 70, 70, 0.614);
+  color: white;
 }
 
 .kontakt-formular input::placeholder,
@@ -627,6 +633,11 @@ footer h3 {
   font-weight: lighter;
 }
 
+.om-oss h2, p{
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeUp 1.2s ease-out forwards;
+}
 .start{
   background-image: url(/public/bg_images/start.jpeg);
   background-size: cover;
