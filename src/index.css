@@ -397,7 +397,7 @@ flex: 1;
   .kontakt-formular {
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 100%;
    /* padding: 1rem;
     padding-right: 2rem;*/
   }
