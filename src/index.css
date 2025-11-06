@@ -68,8 +68,8 @@ body {
 
 @media(max-width: 768px){
   .navbar::after{
-    width: 100vh;
-    left: -100%;
+    width: 50%;
+    left: -75%;
   }
 }
 @keyframes sheen {
