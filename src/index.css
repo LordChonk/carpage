@@ -1,5 +1,5 @@
 #root {
-  background-color: black;
+  /*background-color: black;*/
   color: white;
 }
 
@@ -37,21 +37,25 @@ body {
 
 /* Navbar styles */
 .navbar {
-  display: flex;
+ display: flex;
   flex-direction: row;
-  /* mobile-first */
   justify-content: space-between;
   align-items: center;
-  background: transparent;
+
+  /* Visuals */
+  background-color: rgba(0, 0, 0, 0.3); /* less opaque */
   color: white;
   padding: 1rem;
-  /* Sticky */
+
+  /* Positioning */
   position: sticky;
   top: 0;
   z-index: 1000;
 
-  /* Shading */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Subtle blur and shading */
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px); /* Safari support */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .navbar .logo {
@@ -100,7 +104,8 @@ body {
 }
 
 .nav-link:hover {
-  background: #c193378b;
+  background: white;
+  color: black;
 }
 
 /* Active link style */
@@ -243,6 +248,8 @@ footer h3 {
   font-weight: 500;
   font-size: 20px;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+  margin-top: -2rem;
+  padding-top: 80px;
 }
 
 
@@ -377,7 +384,7 @@ footer h3 {
 /* Lagersida */
 
 .lager-section {
-  background-image: url(/public/bg_images/lager.jpg);
+  background-image: url(/public/bg_images/lager2.jpg);
   background-size: cover;
   /*color: #f0f0f0;*/
   padding: 3rem 1rem;
@@ -439,7 +446,8 @@ footer h3 {
 }
 
 .lager-button:hover {
-  background-color: #e3b85d;
+  background-color: #000000;
+  color: white;
 }
 
 .iframe-wrapper {
@@ -496,10 +504,10 @@ footer h3 {
 }
 
 
-/*.lager-sida {
-  text-align: center;
-  margin-top: 2rem;
+.lager-sida {
+  margin-top: -1.2rem;
 }
+/*
 
 .IframeBox {
   background: #271f1f;
@@ -544,6 +552,7 @@ footer h3 {
   min-height: 100vh;
   position: relative;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+  margin-top: -1.2rem;
 }
 
 .salj-sida::before {
@@ -566,9 +575,9 @@ footer h3 {
 }
 
 .kontakt-sida {
-  background-image: url(/public/bg_images/tools.jpg);
+  background-image: url(/public/bg_images/kontakt2.jpeg);
   background-size: cover;
-  overflow: hidden;
+  /*overflow: hidden;*/
   background-repeat: no-repeat;
   background-position: center;
   min-height: 100vh;
@@ -606,6 +615,7 @@ footer h3 {
   font-weight: bolder;
   padding-left: 3rem;
   padding-right: 3rem;
+  margin-top: -1.2rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
@@ -650,6 +660,7 @@ footer h3 {
   font-weight: bolder;
   padding-left: 3rem;
   padding-right: 3rem;
+  margin-top: -1.2rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
