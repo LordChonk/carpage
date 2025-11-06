@@ -26,11 +26,12 @@ export default function Kontakt() {
     <div className="kontakt-sida">
     <div className="form-sida">
 
-<h2>Kontakta oss</h2>
+
     <div className="form-cols">
-      
+      <div className="kontakt-text">
+      <h2>Kontakta oss</h2>
       <p>Har du några funderingar, frågor eller vill boka tid hos oss? Tveka inte att höra av dig via kontaktformuläret, så återkommer vi så snart vi kan!</p>
-    
+    </div>
       <div className="kontakt-formular">
       <form onSubmit={handleSubmit}>
         <div className="form-row">

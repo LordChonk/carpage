@@ -25,11 +25,12 @@ export default function SälgDinBil(){
     return (
       <div className="salj-sida">
         <div className="form-sida">
-            
-            <h2>Vi köper din bil - snabbt, enkelt och tryggt!</h2>
+           
             <div className="form-cols">
-            
+              <div className="kontakt-text">
+               <h2>Vi köper din bil - snabbt, enkelt och tryggt!</h2>
             <p>Vill du sälja din bil utan krångel? På VK Performance gör vi det enkelt för dig. Vi köper bilar av alla märken, modeller och i alla skick. Med vår smidiga process får du en rättvis värdering och en trygg affär – direkt och utan omvägar.</p>
+            </div>
             {/*put the form for vehicle details here */}
 
             <div className="kontakt-formular">

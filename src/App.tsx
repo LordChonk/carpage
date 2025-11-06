@@ -92,8 +92,14 @@ function App(){
      <div className="footer-col"> 
         <h1>KONTAKTUPPGIFTER</h1>
         <address>
+          <a
+          href="https://maps.app.goo.gl/i8wuyeWUhZtqd5ep7"
+          target="_blank"
+          rel="noopener nogerrer"
+          style={{ textDecoration: 'none' }}>
           Hyvelgatan 37 <br /> 
           741 71 Knivsta 
+          </a>
         </address>
       </div>
 
@@ -114,7 +120,8 @@ function App(){
     <a
     href="https://www.tiktok.com/@vkperformancese?_r=1&_t=ZN-919Mq8Pd8yM"
     target="_blank"
-    rel="noopener noregerrer">
+    rel="noopener noregerrer"
+    >
     <FaTiktok/>
     </a>
     <FaFacebook/>
