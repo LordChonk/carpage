@@ -9,7 +9,8 @@ import {FaInstagram} from "react-icons/fa"
 import {FaFacebook} from "react-icons/fa"
 import { FaWhatsapp } from "react-icons/fa";
 import { FaTiktok } from "react-icons/fa";
-
+import { FaPhone } from "react-icons/fa";
+import { FaLocationPin } from "react-icons/fa6";
 function App(){
   const [menuOpen, setMenuOpen] =useState(false);
 
@@ -19,7 +20,6 @@ function App(){
   <div>
     {/* Navbar */}
     <header className="navbar">
-      {/*<h1 className="logo">Carpage placeholder</h1>*/}
       <NavLink to="/" className="logo-button">
       <img src="./public/logo.jpeg"></img>
       </NavLink>
@@ -97,10 +97,13 @@ function App(){
           target="_blank"
           rel="noopener nogerrer"
           style={{ textDecoration: 'none' }}>
-          Hyvelgatan 37 <br /> 
+          <FaLocationPin/> Hyvelgatan 37 <br /> 
           741 71 Knivsta 
-          </a>
-        </address>
+          </a> {/*add pin */}
+        </address><br/>
+        <FaPhone/> <a href="tel:0720093648"
+        style={{textDecoration: 'none'}}>072-0093648</a>{/*fix so it links to phone and icon next to number*/}
+        
       </div>
 
       <div className="footer-col">
@@ -110,7 +113,6 @@ function App(){
   </div>
 
 <div className="social-icons">
-{/*<p>/*put social media icons lowest, centered in a row, so basically here </p>*/}
 <a
                     href=""
                     target="_blank"
