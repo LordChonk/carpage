@@ -102,7 +102,7 @@ function App(){
           </a> {/*add pin */}
         </address><br/>
         <FaPhone/> <a href="tel:0720093648"
-        style={{textDecoration: 'none'}}>072-0093648</a>{/*fix so it links to phone and icon next to number*/}
+        style={{textDecoration: 'none'}}>072-0093648</a>
         
       </div>
 
@@ -126,8 +126,8 @@ function App(){
     >
     <FaTiktok/>
     </a>
-    <FaFacebook/>
-    <FaWhatsapp/>
+    <a 
+    href="tel:tel:0720093648" style={{textDecoration: 'none'}}><FaWhatsapp/></a>
 </div>
 
       <h3>© {new Date().getFullYear()} VK Perfomance. Hemsidan skapad av Adrian Hjert</h3>
