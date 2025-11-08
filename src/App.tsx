@@ -6,7 +6,6 @@ import Kontakt from "./pages/Kontakt";
 import SälgDinBil from "./pages/SaljDinBil";
 import Lager from "./pages/Lager";
 import {FaInstagram} from "react-icons/fa"
-import {FaFacebook} from "react-icons/fa"
 import { FaWhatsapp } from "react-icons/fa";
 import { FaTiktok } from "react-icons/fa";
 import { FaPhone } from "react-icons/fa";
@@ -112,9 +111,9 @@ function App(){
     </div>
   </div>
 
-<div className="social-icons">
+<div className="social-icons"> {/* länk till instagram konto mellan "", tex. href="https://instagram.com/konto"*/}
 <a
-                    href=""
+                    href="" 
                     target="_blank"
                     rel="noopener noregerrer">
     <FaInstagram/> 
