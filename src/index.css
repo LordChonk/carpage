@@ -678,6 +678,8 @@ flex: 1;
 .om-oss p {
   font-size: 20px;
   font-weight: lighter;
+  justify-self: center;
+  max-width: 70%;
 }
 
 .om-oss h2, p{
@@ -685,6 +687,14 @@ flex: 1;
   transform: translateY(40px);
   animation: fadeUp 1.2s ease-out forwards;
 }
+
+@media(max-width: 768px){
+  .om-oss p{
+    max-width: 100%;
+  }
+}
+
+
 .start{
   background-image: url(/bg_images/start.jpeg);
   background-size: cover;
@@ -723,12 +733,20 @@ flex: 1;
 .start p {
   font-size: 20px;
   font-weight: lighter;
+  justify-self: center;
+  max-width: 70%;
 }
 
 .start h2, p{
   opacity: 0;
   transform: translateY(40px);
   animation: fadeUp 1.2s ease-out forwards;
+}
+
+@media(max-width: 768px){
+  .start p{
+  max-width: 100%;
+  }
 }
 
 @keyframes fadeUp {

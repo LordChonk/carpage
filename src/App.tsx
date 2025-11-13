@@ -20,7 +20,7 @@ function App(){
     {/* Navbar */}
     <header className="navbar">
       <NavLink to="/" className="logo-button">
-      <img src="./public/logo.jpeg"></img>
+      <img src="/logo.jpeg" alt="Logo" />
       </NavLink>
 
     {/* Mobile Navbar */}
@@ -94,7 +94,7 @@ function App(){
           <a
           href="https://maps.app.goo.gl/i8wuyeWUhZtqd5ep7"
           target="_blank"
-          rel="noopener nogerrer"
+          rel="noopener noferrer"
           style={{ textDecoration: 'none' }}>
           <FaLocationPin/> Hyvelgatan 37 <br /> 
           741 71 Knivsta 
@@ -115,18 +115,21 @@ function App(){
 <a
                     href="" 
                     target="_blank"
-                    rel="noopener noregerrer">
+                    rel="noopener noreferrer">
     <FaInstagram/> 
     </a>
     <a
     href="https://www.tiktok.com/@vkperformancese?_r=1&_t=ZN-919Mq8Pd8yM"
     target="_blank"
-    rel="noopener noregerrer"
+    rel="noopener noreferrer"
     >
     <FaTiktok/>
     </a>
     <a 
-    href="tel:tel:0720093648" style={{textDecoration: 'none'}}><FaWhatsapp/></a>
+    href="https://wa.me/46720093648"
+    target="_blank"
+    style={{textDecoration: 'none'}}
+    rel="noopener noreferrer"><FaWhatsapp/></a>
 </div>
 
       <h3>© {new Date().getFullYear()} VK Perfomance. Hemsidan skapad av Adrian Hjert</h3>
